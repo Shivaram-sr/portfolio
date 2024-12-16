@@ -1,0 +1,107 @@
+/* Global Styles */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+  }
+  
+  body.dark-mode {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  button#theme-toggle {
+    padding: 5px 10px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .skills-list li {
+    list-style: none;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+  }
+  
+  .project {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .project.hidden {
+    display: none;
+  }
+  
+  .testimonial {
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
